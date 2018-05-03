@@ -1,0 +1,21 @@
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# Project Related
+node_modules/
+/server/node_modules/
+/client/node_modules/
+report/
+npm-debug.log
+npm-debug.log.*
+package-lock.json
+deployment_token.json
+deployment_settings.json
+prod_deployment_settings.json
+
+# OS Stuff
+.DS_Store
