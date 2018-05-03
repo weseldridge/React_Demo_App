@@ -4,9 +4,9 @@ This project is a demo project that demonstrates how to use a set of common tool
 
 ## Contents
 
-- [Getting Started](/#Getting Started)
-- [React Client](/#React Client)
-- [GraphQL Server](/#GraphQL Server)
+- [Getting Started](https://github.com/weseldridge/React_Demo_App#user-content-getting-started)
+- [React Client](https://github.com/weseldridge/React_Demo_App#user-content-react-client)
+- [GraphQL Server](https://github.com/weseldridge/React_Demo_App#user-content-graphql-server)
 
 ## Getting Started
 
