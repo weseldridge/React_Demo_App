@@ -6,6 +6,7 @@ import resolvers from './resolvers';
 export const typeDefs = `
 
     type Hero {
+        _id: String
         name: String
         dob: String
         website: String

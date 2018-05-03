@@ -25,11 +25,11 @@ export const withQuery = (query, prop, dataPath, options) => graphql(
         props: ({data}) => {
             const {loading, error, ...apolloProps} = data;
             if (error) throw(error);
-
+            console.log(data, dataPath);
             return {
                 loading,
                 apolloProps,
-                [prop]: get(data, dataPath),
+                [prop]: dataPath ? get(data, dataPath) : data,
                 error
             }
         }
