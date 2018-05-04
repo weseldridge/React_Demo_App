@@ -2,6 +2,8 @@
 
 This project is a demo project that demonstrates how to use a set of common tools to build testable and maintainable projects. You will find a small GraphQl server that provides data to the client. The client is bootstarted with creat react app.
 
+- [Slides](https://docs.google.com/presentation/d/1d-mq8-Bw6b5eS0ur0ylGTloTkfAkmycfrRB077OV_EA/edit?usp=sharing)
+
 ## Contents
 
 - [Getting Started](https://github.com/weseldridge/React_Demo_App#user-content-getting-started)

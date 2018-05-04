@@ -14,16 +14,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <AppBar>
-            <AppBarContainer>
-                <AppBarSide>
-                    <AppBarLink to="/">Home</AppBarLink>
-                    <AppBarLink to="/heros">Heros</AppBarLink>
-                </AppBarSide>
-                <AppBarSide>
-                    <AppBarLink to="https://github.com/weseldridge/React_Demo_App" isExternal={true}>GitHub</AppBarLink>
-                </AppBarSide>
-            </AppBarContainer>
+        <AppBar>
+          <AppBarContainer>
+              <AppBarSide>
+                  <AppBarLink to="/">Home</AppBarLink>
+                  <AppBarLink to="/heros">Heros</AppBarLink>
+              </AppBarSide>
+              <AppBarSide>
+                  <AppBarLink to="https://github.com/weseldridge/React_Demo_App" isExternal={true}>GitHub</AppBarLink>
+              </AppBarSide>
+          </AppBarContainer>
         </AppBar>
         <RouteConfig />
         <NotificationContainer />
