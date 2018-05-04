@@ -10,10 +10,12 @@ export const typeDefs = `
         name: String
         dob: String
         website: String
+        image: String
     }   
 
     type Query {
         heros: [Hero]
+        hero(id: String): Hero
     }
 
 `;

@@ -3,4 +3,35 @@ body,
 .app {
     margin: 0;
     padding: 0;
+    font-family: 'Cousine',monospace;
+}
+
+table {
+    width: 100%;
+    backgound-color: white;
+    width: 100%;
+    border-spacing: 0;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 1rem;
+    background-color: white;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; 
+    font-weight: 700;
+    border-bottom: 1px solid #aaa;
+}
+
+td {
+    padding: 1rem;
+    background-color: white;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; 
+    border-bottom: 1px solid #eee;
 }

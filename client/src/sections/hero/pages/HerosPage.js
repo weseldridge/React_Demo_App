@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import compose from 'recompose/compose';
 
 import query from '../queries/HerosPage';
@@ -19,11 +20,11 @@ export const HerosPage = ({heros}) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {heros.map(({name, dob, website}) => (
+                    {heros.map(({_id, name, dob, website}) => (
                         <tr>
-                            <td>{name}</td>
+                            <td><Link to={`/hero/${_id}`}>{name}</Link></td>
                             <td>{dob}</td>
-                            <td>{website}</td>
+                            <td><a href={website} target="_blank">{website}</a></td>
                         </tr>
                     ))}
                 </tbody>

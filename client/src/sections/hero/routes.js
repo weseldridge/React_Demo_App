@@ -9,7 +9,7 @@ const HeroRoutes = [
         component: HerosPage
     },
     {
-        path: '/hero/:slug',
+        path: '/hero/:id',
         component: HeroPage
     }
 ];

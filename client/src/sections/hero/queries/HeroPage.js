@@ -1,11 +1,13 @@
 import gql from "graphql-tag";
 
 const query = gql`
-    query heroPage {
-        heros {
+    query heroPage($id: String) {
+        hero(id: $id) {
+            _id
             name
             dob
             website
+            image
         }
     }
 `;

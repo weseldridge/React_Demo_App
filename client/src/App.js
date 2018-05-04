@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import {NotificationContainer} from 'react-notifications';
 
 import RouteConfig from './routes';
-
 import AppBar from './components/core/AppBar/AppBar';
 import AppBarLink from './components/core/AppBar/AppLink';
 import AppBarContainer from './components/core/AppBar/AppBarContainer';
 import AppBarSide from './components/core/AppBar/AppBarSide';
 
+// CSS
+import 'react-notifications/lib/notifications.css';
 
 class App extends Component {
   render() {
@@ -24,6 +26,7 @@ class App extends Component {
             </AppBarContainer>
         </AppBar>
         <RouteConfig />
+        <NotificationContainer />
       </div>
     );
   }

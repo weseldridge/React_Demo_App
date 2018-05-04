@@ -1,5 +1,6 @@
 import { graphql } from 'react-apollo';
 import get from 'lodash/get';
+import {NotificationManager} from 'react-notifications';
 
 const mergeOptions = (options, props) => {
     if (typeof(options)!=='function') return options || {};
@@ -18,14 +19,13 @@ export const withQuery = (query, prop, dataPath, options) => graphql(
     query,
     {
         options: (props) => ({
-            fetchPolicy: 'network-only', 
+            fetchPolicy: 'cache-and-network', 
             notifyOnNetworkStatusChange: true, 
             ...mergeOptions(options, props)
         }),
         props: ({data}) => {
             const {loading, error, ...apolloProps} = data;
             if (error) throw(error);
-            console.log(data, dataPath);
             return {
                 loading,
                 apolloProps,
@@ -35,3 +35,31 @@ export const withQuery = (query, prop, dataPath, options) => graphql(
         }
     }
 );
+
+
+export const notificationsTypes = {
+    warning: 'warning',
+    error: 'error',
+    success: 'success',
+    info: 'info'
+};
+
+export const addNotification = (notifi) => {
+    const {title, type, message} = notifi;
+    const TIME = 3000;
+
+    switch(type) {
+        case notificationsTypes.info:
+            NotificationManager.info(message, title, TIME);
+            break;
+        case notificationsTypes.success:
+            NotificationManager.success(message, title, TIME);
+            break;
+        case notificationsTypes.warning:
+            NotificationManager.warning(message, title, TIME);
+            break;
+        case notificationsTypes.error:
+            NotificationManager.error(message, title, TIME);
+            break;
+    }
+};

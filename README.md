@@ -39,10 +39,20 @@ The client organizes its folders around feature areas instead of pages. It shows
 
 Some of the libraries used to help build and test components are listed below.
 
-- Styled Components
-- Recompose
-- Storybook
-- 
+**Client Libraries**
+
+- [Recompose](https://github.com/acdlite/recompose)
+- [Storybook](https://storybook.js.org/)
+- [Apollo](http://www.apollostack.com/)
+
+**Testing**
+
+- [Styled Components 💅](https://www.styled-components.com/)
+- [Jest](https://facebook.github.io/jest/)
+- [Enzyme](https://github.com/airbnb/enzyme)
+- [Sinon](https://github.com/sinonjs/sinon)
+- [Chai](https://github.com/domenic/sinon-chai)
+- [Faker](https://github.com/marak/Faker.js/)
 
 ## GraphQL Server
 
